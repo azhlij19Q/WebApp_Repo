@@ -1,16 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>My Personal Web[age - Home</title>
-    <link rel="stylesheet" href="tailor.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Greetings viewer ! You've stumbled upon a site rendered by yours truly (Anthony is my name)</h1>
-    <p>Here, you will be able to interact with a variable pile of knowledge I have to share, regarding who I am, what I've done yada yada</p>
+    <header>
+      <h1>Anthony is my name</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="desk"> <!--This is where all the main interactable sections of the page will be contained-->
-      <div class="win" id="about">About</div>
-      <div class="win" id="faq">FAQ</div>
-      <div class="win" id="work">Work History</div>
-    </div>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>This is a short description about who I am and what I do.</p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Anthony Hope. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
